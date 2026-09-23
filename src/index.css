@@ -3,23 +3,81 @@ body {
   margin: 0;
 }
 
-.header {
+header {
+  background: #f55a5a;
   display: flex;
-  background-color: #f55a5a;
-  margin: 0 auto;
-  max-width: 550px;
   justify-content: center;
   align-items: center;
   color: white;
-  padding-block: 1rem;
-  gap: 7px;
+  height: 55px;
 }
 
-.header h1 {
-  font-size: 14px;
-}
-
-.header img {
+header > img {
   width: 24px;
-  height: 24px;
+  margin-right: 7px;
+}
+
+header > h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.entry {
+  display: flex;
+  padding: 45px 40px;
+  overflow: hidden;
+  gap: 19px;
+  width: 470px;
+  max-height: 168px;
+  margin-inline: auto;
+}
+
+.entry-photo {
+  object-fit: cover;
+  height: 100%;
+}
+
+.entry-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  max-width: 125px;
+  overflow: hidden;
+}
+
+.sub-section-location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+
+.sub-section-location > img {
+  width: 15px;
+  height: 15px;
+}
+
+.maps-link {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.location-name {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 4px;
+  margin-bottom: 17px;
+}
+
+.date,
+.entry-text {
+  font-size: 10px;
+}
+
+.date {
+  font-weight: 700;
+  margin-bottom: 9px;
 }
