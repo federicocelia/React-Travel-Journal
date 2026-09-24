@@ -4,17 +4,7 @@ import data from "../data.js";
 
 export default function App() {
   const entry = data.map((place) => {
-    return (
-      <Entry
-        key={place.id}
-        img={place.img}
-        title={place.title}
-        country={place.country}
-        googleMapsLink={place.googleMapsLink}
-        dates={place.dates}
-        text={place.text}
-      />
-    );
+    return <Entry key={place.id} place={place} />;
   });
 
   return (
