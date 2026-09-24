@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx";
 import Entry from "../components/Entry.jsx";
+import Map from "../components/Map.jsx";
 import data from "../data.js";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <>
       <Header />
+      <Map places={data} />
       {entry}
     </>
   );
