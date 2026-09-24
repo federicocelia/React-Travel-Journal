@@ -2,7 +2,7 @@ export default function Entry(prop) {
   return (
     <article className="entry">
       <section className="entry-photo-container">
-        <img className="entry-photo" src={prop.src} alt={prop.alt} />
+        <img className="entry-photo" img={prop.img} />
       </section>
 
       <section>

@@ -7,8 +7,7 @@ export default function App() {
     return (
       <Entry
         key={place.id}
-        alt={place.img.alt}
-        src={place.img.src}
+        img={place.img}
         title={place.title}
         country={place.country}
         googleMapsLink={place.googleMapsLink}
