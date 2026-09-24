@@ -12,7 +12,7 @@ export default function App() {
     <>
       <Header />
       <Map places={data} />
-      {entry}
+      <div className="entries-container">{entry}</div>
     </>
   );
 }
